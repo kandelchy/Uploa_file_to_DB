@@ -1,0 +1,8 @@
+%table
+  %thead
+
+  %tbody
+    - @attachments.each do |att|
+      %tr
+        %td= att.name
+        %td= link_to 'Download', attachment_path(att.id)

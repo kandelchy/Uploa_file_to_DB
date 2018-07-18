@@ -1,0 +1,9 @@
+= form_for(@attachment, :html => {:multipart => true}) do |f|
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :data
+    = f.file_field :data
+  .actions
+    = f.submit "Upload"

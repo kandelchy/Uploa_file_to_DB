@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: UTF8
+  pool: 10
+  port: 5432
+
+development:
+  <<: *default
+  database: kandelchy
+  host:
+  username: bassam
+  password: postgres
